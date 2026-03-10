@@ -24,9 +24,10 @@ p {
 }
 
 .cat {
+	padding: 20px;
 	opacity: 0;
-	width: 35%;
-	height: 35%;
+	width: 60%;
+	height: 60%;
 }
 
 @keyframes appear {

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Kosugi+Maru&display=swap');
+
+body {
+	background-color: #bdeeca;
+}
+
+#center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	width: 100%;
+}
+
+h1 {
+	font-family: "Cherry Bomb One", system-ui;
+	font-size: 10vw;
+}
+
+p {
+	font-family: "Kosugi Maru", sans-serif;
+	font-size: 6vw;
+}
+
+.cat {
+	opacity: 0;
+	width: 35%;
+	height: 35%;
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+		transform: translateY(80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.cat-anime {
+	animation : appear 3s ease-out 4s forwards;
+}
